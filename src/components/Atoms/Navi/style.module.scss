@@ -7,9 +7,17 @@
   position: relative;
   padding: 0 0 0 1.25em;
 
+  & + & {
+    margin-top: 1em;
+  }
+
   &::before {
     position: absolute;
     left: 0;
     content: '・';
+  }
+
+  a {
+    text-decoration: underline;
   }
 }

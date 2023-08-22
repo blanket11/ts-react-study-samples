@@ -1,11 +1,10 @@
 ---
 import Menu from "@components/Organisms/Menu/";
-const list = [
-  {
-    text: "TypeScript入門",
-    href: "/typescript-study/",
-  }
-];
+import type { Item } from "@components/Atoms/Navi";
+interface Props {
+	list: Item[];
+}
+const {list} = Astro.props;
 ---
 
 <Menu list={list} />

@@ -1,0 +1,24 @@
+---
+import Button from "@components/Atoms/Button";
+import Spacer from "@components/Atoms/Spacer";
+import Title from "@components/Atoms/Title";
+const { title } = Astro.props;
+---
+
+<main>
+  <header>
+    <Title>{title}</Title>
+  </header>
+  <Spacer />
+  <div>
+    <slot />
+  </div>
+  <Spacer size="lg" />
+  <footer>
+    <a href="/">
+      <Button>戻る</Button>
+    </a>
+  </footer>
+</main>
+
+

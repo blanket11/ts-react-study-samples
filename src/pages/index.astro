@@ -1,8 +1,18 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import HomeTemplate from '@components/Templates/HomeTemplate.astro';
+const list = [
+  {
+    text: "TypeScript入門",
+    href: "/typescript-study/",
+  },
+	{
+		text: "まず覚えるJSX特徴２つ",
+		href: "/react/jsx-feature",
+	}
+];
 ---
 
 <Layout title="Welcome to Astro.">
-		<HomeTemplate />
+		<HomeTemplate list={list} />
 </Layout>
