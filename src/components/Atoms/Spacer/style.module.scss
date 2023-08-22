@@ -1,0 +1,14 @@
+$baseSize: 32px;
+.spacer {
+  &[data-size="sm"] {
+    margin-top: $baseSize * 0.5;
+  }
+
+  &[data-size="md"] {
+    margin-top: $baseSize;
+  }
+
+  &[data-size="lg"] {
+    margin-top: $baseSize * 2;
+  }
+}
