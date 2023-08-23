@@ -1,19 +1,32 @@
+import { useState, useEffect } from "react";
 import Title from "@components/Atoms/Title";
+import Spacer from "@components/Atoms/Spacer";
+import Button from "@components/Atoms/Button";
 
 const Study09 = () => {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    console.log("コンポーネントが表示されたら実行");
+  }, []);
+
+  useEffect(() => {
+    console.log("counterが変更されたら実行");
+  }, [counter]);
+
+  const countUp = () => {
+    setCounter(counter + 1);
+  };
   return (
     <div>
-      <Title>useRef</Title>
-      <p style={{ border: "1px solid #f00" }}>
-        この要素の情報を取得してみましょう。
-        <br />
-        この高さをconsole.logで見てみます。
-      </p>
-      {/* 1. useRefを使い pEl 参照を作成 */}
-      {/* 2. ref属性を使用して、pタグで pEl 関連付ける */}
-      {/* 3. useEffectで pEl の高さを console.logで確認 */}
-      {/* 4. pEl.current を ifで存在確認チェック */}
-      {/* 5. .clinentHeightがエラーになる場合は useRef<HTMLParagraphElement | null>(null) と型を指定 */}
+      <Title>useEffectを知ろう</Title>
+      <p>console.logを確認</p>
+      <Spacer />
+      <p>カウント：{counter}</p>
+      <Spacer />
+      <button onClick={countUp}>
+        <Button size="sm">+1する</Button>
+      </button>
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  & > * {
+    $width: 320px;
+    flex-basis: $width;
+    width: $width;
+    max-width: $width;
+  }
+}

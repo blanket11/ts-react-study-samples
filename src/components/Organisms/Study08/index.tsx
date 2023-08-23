@@ -1,32 +1,24 @@
-import { useState, useEffect } from "react";
-import Title from "@components/Atoms/Title";
-import Spacer from "@components/Atoms/Spacer";
 import Button from "@components/Atoms/Button";
+import Spacer from "@components/Atoms/Spacer";
+import Title from "@components/Atoms/Title";
 
 const Study08 = () => {
-  const [counter, setCounter] = useState(0);
-
-  useEffect(() => {
-    console.log("コンポーネントが表示されたら実行");
-  }, []);
-
-  useEffect(() => {
-    console.log("counterが変更されたら実行");
-  }, [counter]);
-
-  const countUp = () => {
-    setCounter(counter + 1);
-  };
   return (
     <div>
-      <Title>useEffectを知ろう</Title>
-      <p>console.logを確認</p>
+      <Title>useStateを使ってカウントアップ</Title>
+      <p>
+        useStateで counter と setCounter
+        を作りボタンを押したら数字がカウントアップするようにする。
+      </p>
+      {/* 1. useStateの読み込み */}
+      {/* 2. useState を使い counter と setCounter を用意 */}
+      {/* 3. countUp 関数を用意 */}
+      {/* 4. buttonタグでButtonタグを囲い onClick を設定 */}
+      {/* 5. Astroの仕様で一部ブラウザレンダリングにするため client:load を設定する */}
       <Spacer />
-      <p>カウント：{counter}</p>
+      <p>カウント：0</p>
       <Spacer />
-      <button onClick={countUp}>
-        <Button size="sm">+1する</Button>
-      </button>
+      <Button size="sm">+1する</Button>
     </div>
   );
 };
