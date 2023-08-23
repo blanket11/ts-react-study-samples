@@ -1,24 +1,21 @@
-import Button from "@components/Atoms/Button";
 import Spacer from "@components/Atoms/Spacer";
 import Title from "@components/Atoms/Title";
 
-const Study07 = () => {
+const Study07: React.FC = () => {
   return (
     <div>
-      <Title>useStateを使ってカウントアップ</Title>
+      <Title>children</Title>
+      <p>headingコンポーネントを作り、childrenで値を渡しましょう。</p>
+      {/* 1. /src/components/Atoms/heading/index.tsx ファイルの作成 */}
+      {/* 2. コンポーネントを作成 */}
+      {/* 3. import で読み込み使う */}
+
+      <Spacer />
+
+      <Title>props</Title>
       <p>
-        useStateで counter と setCounter
-        を作りボタンを押したら数字がカウントアップするようにする。
+        headingコンポーネントにpropsでsizeを追加してサイズの値を渡しましょう。
       </p>
-      {/* 1. useStateの読み込み */}
-      {/* 2. useState を使い counter と setCounter を用意 */}
-      {/* 3. countUp 関数を用意 */}
-      {/* 4. buttonタグでButtonタグを囲い onClick を設定 */}
-      {/* 5. Astroの仕様で一部ブラウザレンダリングにするため client:load を設定する */}
-      <Spacer />
-      <p>カウント：0</p>
-      <Spacer />
-      <Button size="sm">+1する</Button>
     </div>
   );
 };

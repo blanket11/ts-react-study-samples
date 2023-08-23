@@ -1,21 +1,50 @@
+import Gallery from "@components/Atoms/Gallery";
 import Spacer from "@components/Atoms/Spacer";
 import Title from "@components/Atoms/Title";
+import Card from "@components/Molecules/Card";
 
-const Study06: React.FC = () => {
+const Study06 = () => {
+  const list = [
+    {
+      title: "サンプル記事タイトルです。その１です。",
+      content:
+        "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。",
+      imageUrl: "https://source.unsplash.com/random/800x600",
+    },
+    {
+      title: "サンプル記事タイトルです。その２です。",
+      content:
+        "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。",
+      imageUrl: "https://source.unsplash.com/random/800x600",
+    },
+    {
+      title: "サンプル記事タイトルです。その３です。",
+      content:
+        "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。",
+      imageUrl: "https://source.unsplash.com/random/800x600",
+    },
+    {
+      title: "サンプル記事タイトルです。その４です。",
+      content:
+        "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。",
+      imageUrl: "https://source.unsplash.com/random/800x600",
+    },
+  ];
   return (
     <div>
-      <Title>children</Title>
-      <p>headingコンポーネントを作り、childrenで値を渡しましょう。</p>
-      {/* 1. /src/components/Atoms/heading/index.tsx ファイルの作成 */}
-      {/* 2. コンポーネントを作成 */}
-      {/* 3. import で読み込み使う */}
-
+      <Title>.map()でのループ</Title>
       <Spacer />
-
-      <Title>props</Title>
       <p>
-        headingコンポーネントにpropsでsizeを追加してサイズの値を渡しましょう。
+        listオブジェクトを.map()で、ループさせてCardコンポーネントでいい感じに表示させましょう！
       </p>
+      <Spacer />
+      <Gallery>
+        <Card
+          title="サンプル記事タイトルです。"
+          content="この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。"
+          imageUrl="https://source.unsplash.com/random/800x600"
+        />
+      </Gallery>
     </div>
   );
 };
