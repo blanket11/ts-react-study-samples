@@ -1,0 +1,18 @@
+$baseSize: 16px;
+.heading {
+  font-weight: 700;
+  color: #3413c7;
+
+  &[data-size='sm'] {
+    font-size: max($baseSize * 0.5, 10px);
+    
+  }
+
+  &[data-size='md'] {
+    font-size: $baseSize;
+  }
+
+  &[data-size="lg"] {
+    font-size: $baseSize * 1.5;
+  }
+}
