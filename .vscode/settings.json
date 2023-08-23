@@ -1,0 +1,48 @@
+{
+	"editor.renderWhitespace": "all",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascriptreact]": {
+		"editor.formatOnSave": true
+	},
+	"prettier.documentSelectors": ["**/*.astro"],
+	"[astro]": {
+		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true
+	},
+	"[json]": {
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"[scss]": {
+		"editor.formatOnSave": true
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true
+	},
+	"editor.rulers": [80],
+	"eslint.packageManager": "yarn",
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"npm.packageManager": "yarn",
+	"liveSassCompile.settings.excludeList": [
+		"resource/**",
+		"**/node_modules/**",
+		".vscode/**"
+	],
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".min.css",
+			"savePath": "~/../../assets/css/"
+		}
+	],
+	"stylelint.validate": ["css", "html", "scss", "astro"]
+}
