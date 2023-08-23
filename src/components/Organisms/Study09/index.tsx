@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Title from "@components/Atoms/Title";
 import Spacer from "@components/Atoms/Spacer";
 import Button from "@components/Atoms/Button";
@@ -6,13 +6,11 @@ import Button from "@components/Atoms/Button";
 const Study09 = () => {
   const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
-    console.log("コンポーネントが表示されたら実行");
-  }, []);
+  // 問題１
+  // console.log("コンポーネントが表示されたら実行");
 
-  useEffect(() => {
-    console.log("counterが変更されたら実行");
-  }, [counter]);
+  // 問題２
+  // console.log("counterが変更されたら実行");
 
   const countUp = () => {
     setCounter(counter + 1);
