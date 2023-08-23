@@ -1,11 +1,11 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import DetailTemplate from '@components/Templates/DetailTemplate.astro';
-import Study08 from "@components/Organisms/Study08";
+import Study08 from "@components/Organisms/Study08/answer";
 ---
 
 <Layout title="useStateを使ってみよう">
   <DetailTemplate title="useStateを使ってみよう">
-    <Study08 />
+    <Study08 client:load />
   </DetailTemplate>
 </Layout>
