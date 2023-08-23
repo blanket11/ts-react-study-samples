@@ -1,11 +1,11 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import ReactDetailTemplate from '@components/Templates/ReactDetailTemplate.astro';
-import Study08 from "@components/Organisms/Study08";
+import Study08 from "@components/Organisms/Study08/answer";
 ---
 
 <Layout title="useStateを使ってみよう">
   <ReactDetailTemplate title="useStateを使ってみよう">
-    <Study08 />
+    <Study08 client:load />
   </ReactDetailTemplate>
 </Layout>
