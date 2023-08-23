@@ -3,12 +3,11 @@ $baseSize: 16px;
   font-weight: 700;
   color: #3413c7;
 
-  &[data-size='sm'] {
+  &[data-size="sm"] {
     font-size: max($baseSize * 0.5, 10px);
-    
   }
 
-  &[data-size='md'] {
+  &[data-size="md"] {
     font-size: $baseSize;
   }
 
