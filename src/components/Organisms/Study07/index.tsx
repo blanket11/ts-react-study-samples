@@ -1,15 +1,19 @@
 import Button from "@components/Atoms/Button";
+import Spacer from "@components/Atoms/Spacer";
 import Title from "@components/Atoms/Title";
 
 const Study07 = () => {
   return (
     <div>
-      <Title>
-        useStateを使ってボタンを押したらテキストが切り替わるようにする。
-      </Title>
-      <p>最初のテキスト</p>
-      <p>切り替わったテキスト</p>
-      <Button size="sm">切り替えボタン</Button>
+      <Title>useStateを使ってカウントアップ</Title>
+      <p>
+        useStateで counter と setCounter
+        を作りボタンを押したら数字がカウントアップするようにする。
+      </p>
+      <Spacer />
+      <p>カウント：0</p>
+      <Spacer />
+      <Button size="sm">+1する</Button>
     </div>
   );
 };
