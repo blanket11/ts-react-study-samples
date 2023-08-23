@@ -24,10 +24,6 @@ const Study01: React.FC = () => {
         斎藤と斉藤は同じか はい OR いいえで答えてください。{" "}
         {/* areStringsEqual関数を使う */}
       </p>
-      <Spacer size="lg" />
-      <a href="/">
-        <Button>TOPへもどる</Button>
-      </a>
     </>
   );
 };
