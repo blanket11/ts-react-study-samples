@@ -1,0 +1,34 @@
+import { useState, useEffect } from "react";
+import Title from "@components/Atoms/Title";
+import Spacer from "@components/Atoms/Spacer";
+import Button from "@components/Atoms/Button";
+
+const Study08 = () => {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    console.log("コンポーネントが表示されたら実行");
+  }, []);
+
+  useEffect(() => {
+    console.log("counterが変更されたら実行");
+  }, [counter]);
+
+  const countUp = () => {
+    setCounter(counter + 1);
+  };
+  return (
+    <div>
+      <Title>useEffectを知ろう</Title>
+      <p>console.logを確認</p>
+      <Spacer />
+      <p>カウント：{counter}</p>
+      <Spacer />
+      <button onClick={countUp}>
+        <Button size="sm">+1する</Button>
+      </button>
+    </div>
+  );
+};
+
+export default Study08;
