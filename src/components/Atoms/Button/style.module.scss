@@ -1,7 +1,23 @@
+$baseSize: 16px;
 .button {
   padding: .5em 1em;
   border: 1px solid #000;
   border-radius: 4px;
-  max-width: 320px;
+  
   text-align: center;
+
+  &[data-size='sm'] {
+    font-size: 10px;
+    max-width: 180px;
+  }
+
+  &[data-size='md'] {
+    font-size: $baseSize;
+    max-width: 320px;
+  }
+
+  &[data-size="lg"] {
+    font-size: $baseSize * 1.5;
+    max-width: 480px;
+  }
 }
