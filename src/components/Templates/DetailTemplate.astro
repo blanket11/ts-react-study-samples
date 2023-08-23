@@ -10,7 +10,7 @@ const { title } = Astro.props;
     <Title>{title}</Title>
   </header>
   <Spacer />
-  <div>
+  <div class="content">
     <slot />
   </div>
   <Spacer size="lg" />
@@ -20,5 +20,13 @@ const { title } = Astro.props;
     </a>
   </footer>
 </main>
+
+<style>
+  .content {
+    padding: 32px;
+    background-color: #ebebeb;
+    border-radius: 8px;
+  }
+</style>
 
 

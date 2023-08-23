@@ -1,8 +1,11 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import TypescriptStudyTemplate from '@components/Templates/TypescriptStudyTemplate.astro';
+import DetailTemplate from '@components/Templates/DetailTemplate.astro';
+import Study01 from "@components/Organisms/Study01";
 ---
 
-<Layout title="Welcome to Astro.">
-		<TypescriptStudyTemplate />
+<Layout title="TypeScript入門">
+		<DetailTemplate title="TypeScript入門" >
+      <Study01 />
+    </DetailTemplate>
 </Layout>
